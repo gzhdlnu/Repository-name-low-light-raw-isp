@@ -1,0 +1,40 @@
+# Local environments and caches
+.conda/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Official datasets and downloaded archives are not redistributed in this repo.
+data/raw/
+*.ARW
+*.DNG
+*.CR2
+*.zip
+*.tar
+*.tar.gz
+
+# Generated image/video artifacts and local experiment dumps.
+outputs/**
+!outputs/README.md
+*.png
+*.jpg
+*.jpeg
+*.npy
+*.npz
+*.pt
+*.onnx
+*.nv12
+
+# Keep the documented release checkpoint explicitly versionable.
+!checkpoints/
+!checkpoints/phase4_learning/
+!checkpoints/phase4_learning/b48_bs12_fair/
+!checkpoints/phase4_learning/b48_bs12_fair/raw_denoiser_best.pt
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
